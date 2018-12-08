@@ -2,7 +2,7 @@
 //  Profile+CoreDataProperties.swift
 //  DNDprofiler
 //
-//  Created by Sam on 11/2/18.
+//  Created by Sam on 12/6/18.
 //  Copyright © 2018 Sam. All rights reserved.
 //
 //
@@ -22,5 +22,6 @@ extension Profile {
     @NSManaged public var playerGold: String?
     @NSManaged public var playerLevel: String?
     @NSManaged public var playerName: String?
+    @NSManaged public var playerIconString: String?
 
 }
