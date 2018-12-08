@@ -42,7 +42,9 @@ class ProfileManagerViewController: UIViewController, UITableViewDataSource, UIT
             print("fetch could not be performed")
         }
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(100)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return profiles.count
     }
@@ -51,7 +53,12 @@ class ProfileManagerViewController: UIViewController, UITableViewDataSource, UIT
         let cell = tableView.dequeueReusableCell(withIdentifier: "profileCell", for: indexPath)
         let profile = profiles[indexPath.row]
         
-        cell.textLabel?.text = profile.characterName
+        if let cell = cell as? ProfileTableViewCell{
+            //let profileEvent = ProfileEvent[indexPath.row]
+            cell.ProfileIcon.image = UIImage(named: profile.playerIconString ?? "")
+            cell.CharacterNameLabel.text = profile.characterName
+            cell.LevelLabel.text = profile.playerLevel
+        }
         
         return cell
     }

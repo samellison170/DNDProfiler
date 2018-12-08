@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224ED0D121BA1205009D66B8 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224ED0D021BA1205009D66B8 /* ProfileTableViewCell.swift */; };
+		224ED0D321BA160C009D66B8 /* ProfileEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224ED0D221BA160C009D66B8 /* ProfileEvent.swift */; };
+		224ED0D521BA1AF9009D66B8 /* ProfilePic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224ED0D421BA1AF9009D66B8 /* ProfilePic.swift */; };
+		224ED0DE21BA2888009D66B8 /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224ED0DC21BA2888009D66B8 /* Profile+CoreDataClass.swift */; };
+		224ED0DF21BA2888009D66B8 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224ED0DD21BA2888009D66B8 /* Profile+CoreDataProperties.swift */; };
 		22955A9A218CC7650017A915 /* ProfileCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22955A99218CC7650017A915 /* ProfileCreateViewController.swift */; };
-		22955A9D218CC94A0017A915 /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22955A9B218CC94A0017A915 /* Profile+CoreDataClass.swift */; };
-		22955A9E218CC94A0017A915 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22955A9C218CC94A0017A915 /* Profile+CoreDataProperties.swift */; };
 		22A8129E218CBB1E007CEAF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8129D218CBB1E007CEAF1 /* AppDelegate.swift */; };
 		22A812A3218CBB1E007CEAF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A812A1218CBB1E007CEAF1 /* Main.storyboard */; };
 		22A812A6218CBB1E007CEAF1 /* DNDprofiler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22A812A4218CBB1E007CEAF1 /* DNDprofiler.xcdatamodeld */; };
@@ -38,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		224ED0D021BA1205009D66B8 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = DNDprofiler/ProfileTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		224ED0D221BA160C009D66B8 /* ProfileEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEvent.swift; sourceTree = "<group>"; };
+		224ED0D421BA1AF9009D66B8 /* ProfilePic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePic.swift; sourceTree = "<group>"; };
+		224ED0DC21BA2888009D66B8 /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = "<group>"; };
+		224ED0DD21BA2888009D66B8 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		22955A99218CC7650017A915 /* ProfileCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCreateViewController.swift; sourceTree = "<group>"; };
-		22955A9B218CC94A0017A915 /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = "<group>"; };
-		22955A9C218CC94A0017A915 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		22A8129A218CBB1E007CEAF1 /* DNDprofiler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNDprofiler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A8129D218CBB1E007CEAF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A812A2218CBB1E007CEAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		224ED0CF21B9F6D0009D66B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				224ED0D221BA160C009D66B8 /* ProfileEvent.swift */,
+				224ED0D421BA1AF9009D66B8 /* ProfilePic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		22A81291218CBB1E007CEAF1 = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +120,10 @@
 		22A8129C218CBB1E007CEAF1 /* DNDprofiler */ = {
 			isa = PBXGroup;
 			children = (
-				22955A9B218CC94A0017A915 /* Profile+CoreDataClass.swift */,
-				22955A9C218CC94A0017A915 /* Profile+CoreDataProperties.swift */,
+				224ED0DC21BA2888009D66B8 /* Profile+CoreDataClass.swift */,
+				224ED0DD21BA2888009D66B8 /* Profile+CoreDataProperties.swift */,
+				224ED0CF21B9F6D0009D66B8 /* Model */,
+				224ED0D021BA1205009D66B8 /* ProfileTableViewCell.swift */,
 				22A8129D218CBB1E007CEAF1 /* AppDelegate.swift */,
 				22A812CE218CBBA7007CEAF1 /* ProfileManagerViewController.swift */,
 				22955A99218CC7650017A915 /* ProfileCreateViewController.swift */,
@@ -268,11 +285,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				224ED0D321BA160C009D66B8 /* ProfileEvent.swift in Sources */,
 				22955A9A218CC7650017A915 /* ProfileCreateViewController.swift in Sources */,
-				22955A9D218CC94A0017A915 /* Profile+CoreDataClass.swift in Sources */,
+				224ED0D121BA1205009D66B8 /* ProfileTableViewCell.swift in Sources */,
+				224ED0DE21BA2888009D66B8 /* Profile+CoreDataClass.swift in Sources */,
 				22A812A6218CBB1E007CEAF1 /* DNDprofiler.xcdatamodeld in Sources */,
+				224ED0D521BA1AF9009D66B8 /* ProfilePic.swift in Sources */,
 				22A8129E218CBB1E007CEAF1 /* AppDelegate.swift in Sources */,
-				22955A9E218CC94A0017A915 /* Profile+CoreDataProperties.swift in Sources */,
+				224ED0DF21BA2888009D66B8 /* Profile+CoreDataProperties.swift in Sources */,
 				22A812CF218CBBA7007CEAF1 /* ProfileManagerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
